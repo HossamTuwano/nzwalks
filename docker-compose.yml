@@ -1,0 +1,33 @@
+  sqldata:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - SA_PASSWORD=/run/secrets/sa_password
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      - ACCEPT_EULA=Y
+    secrets: sa_password
+    ports:
+      - "1433:1433"
