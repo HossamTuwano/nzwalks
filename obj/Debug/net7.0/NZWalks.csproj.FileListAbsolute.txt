@@ -74,3 +74,11 @@
 /home/hossam/Projects/learn/dotnet/NZWalks/bin/Debug/net7.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
 /home/hossam/Projects/learn/dotnet/NZWalks/bin/Debug/net7.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /home/hossam/Projects/learn/dotnet/NZWalks/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/home/hossam/Projects/learn/dotnet/NZWalks/bin/Debug/net7.0/AutoMapper.dll
+/home/hossam/Projects/learn/dotnet/NZWalks/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/hossam/Projects/learn/dotnet/NZWalks/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/hossam/Projects/learn/dotnet/NZWalks/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/hossam/Projects/learn/dotnet/NZWalks/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/hossam/Projects/learn/dotnet/NZWalks/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
+/home/hossam/Projects/learn/dotnet/NZWalks/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll
+/home/hossam/Projects/learn/dotnet/NZWalks/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
