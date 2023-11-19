@@ -18,7 +18,7 @@ class NZWalksAuthDbContext : IdentityDbContext
         var writerRoleId = "79364f83-3e6b-40af-9023-054abd19aca5";
 
         var roles = new List<IdentityRole>
-        {           
+        {
             new IdentityRole
             {
                 Id =  readerRoleId,
@@ -27,13 +27,15 @@ class NZWalksAuthDbContext : IdentityDbContext
                 NormalizedName = "Reader".ToUpper(),
             },
 
-            new IdentityRole 
+            new IdentityRole
             {
                 Id = writerRoleId,
                 ConcurrencyStamp = readerRoleId,
-                Name = "Write",
+                Name = "Writer",
                 NormalizedName = "Writer".ToUpper(),
             },
         };
-}
+
+        builder.Entity<IdentityRole>().HasData(roles);
+    }
 }

@@ -12,7 +12,6 @@ namespace NZWalks.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-[Authorize]
 public class RegionsController : ControllerBase
 {
     private readonly NZWalksDbContext dbContext;
@@ -27,7 +26,7 @@ public class RegionsController : ControllerBase
     // Gets all Regions
     // GET: https://localhost:{port}/api/regions
     [HttpGet]
-
+    [Authorize(Roles = "Reader")]
     public async Task<IActionResult> GetAll()
     {
         // gets data from Database
@@ -55,6 +54,7 @@ public class RegionsController : ControllerBase
     // GET: https://localhost:{port}/api/regions/{id}
     [HttpGet]
     [Route("{id:Guid}")]
+    [Authorize(Roles = "Reader")]
     public async Task<IActionResult> GetById([FromRoute] Guid id)
     {
         // Gets Data Domain from Database
@@ -82,6 +82,8 @@ public class RegionsController : ControllerBase
     // POST: https://localhost:{port}/api/regions
     [HttpPost]
     [ValidateModel]
+    [Authorize(Roles = "Writer")]
+
     public async Task<IActionResult> Create([FromBody] AddRegionRequestDto addRegionRequestDto)
     {
 
@@ -116,6 +118,7 @@ public class RegionsController : ControllerBase
     // PUT: https://localhost:{port}/api/regions/{ID}
     [HttpPut]
     [Route("{id:Guid}")]
+    [Authorize(Roles = "Writer")]
     public async Task<IActionResult> Update([FromRoute] Guid id, [FromBody] UpdateRegionRequestDto updateRegionRequestDto)
     {
         // Check if Region Exits
@@ -150,6 +153,7 @@ public class RegionsController : ControllerBase
     // DELETE: https://localhost:{port}/api/regions/{ID}
     [HttpDelete]
     [Route("{id:Guid}")]
+    [Authorize(Roles = "Writer,Reader")]
     public async Task<IActionResult> Delete([FromRoute] Guid id)
     {
         // Checks if Region exists

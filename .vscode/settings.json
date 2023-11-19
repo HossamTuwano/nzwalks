@@ -1,5 +1,6 @@
 {
-  "cSpell.words": ["ASPNETCORE", "Hossam", "Knowhere", "Zupirh"],
+  "cSpell.words": ["ASPNETCORE", "Hmac", "Hossam", "Knowhere", "Zupirh"],
   "editor.minimap.maxColumn": 80,
-  "bladeFormatter.format.wrapLineLength": 80
+  "bladeFormatter.format.wrapLineLength": 80,
+  "editor.wordWrap": "wordWrapColumn"
 }
